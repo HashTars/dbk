@@ -1,0 +1,22 @@
+mysql:
+  name: zhangsan
+  user: demo
+  password: 123456
+  host: 127.0.0.1
+  port: 3306
+
+
+file:
+  path: /data/files     # 备份的文件夹
+
+local:
+  dir: /data/bk_dir            # 本地工作目录
+
+
+remote:
+  host: 111.111.111.111              # 远程主机
+  user: targeuser                   # 远程账户
+  password:                         # 如果不配置公钥验证就需要配置密码
+  privatekey: ~/.ssh/id_rsa         # 如果采用ssh公钥验证时候配置
+  dir: /data                        # 远程主机同步的位置，需要提前给读写权限
+
